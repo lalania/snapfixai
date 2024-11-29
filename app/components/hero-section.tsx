@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
@@ -50,7 +51,7 @@ export function HeroSection() {
               <Button
                 className="w-full bg-blue-600 text-white hover:bg-blue-700"
                 size="lg"
-                onClick={trackDownloadiOS}
+                onClick={() => {trackDownloadiOS()}}
               >
                 <svg
                   viewBox="0 0 384 512"
@@ -63,7 +64,7 @@ export function HeroSection() {
               <Button
                 className="w-full bg-blue-600 text-white hover:bg-blue-700"
                 size="lg"
-                onClick={trackDownloadAndroid}
+                onClick={() => {trackDownloadAndroid() }}
               >
                 <svg
                   viewBox="0 0 505.145 505.145"
