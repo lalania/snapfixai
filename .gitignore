@@ -1,0 +1,60 @@
+# Next.js build output
+.next
+out
+
+# Vercel build output
+.vercel
+.vercel/output
+
+# TypeScript build output
+*.tsbuildinfo
+
+# Editor preferences
+.editorconfig
+.prettierrc.js
+.eslintrc.js
+
+# IDE specific files
+.idea
+.vscode
+
+# Testing files
+coverage
+test
+
+# Production build files
+build
+dist
+
+# Temporary files
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs and caches
+logs
+cache
+
+# Local development
+*.log
+
+# Database files
+*.db
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE config files
+.vscode
+.idea
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
