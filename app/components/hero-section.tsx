@@ -1,8 +1,27 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import mixpanel from "mixpanel-browser";
+
+mixpanel.init("55b00c51a1399e066dd948c7e5a73d05", {
+  debug: false,
+  track_pageview: true,
+  persistence: "localStorage",
+});
 
 export function HeroSection() {
+  const trackDownloadiOS = () => {
+    mixpanel.track("Download Click", {
+      type: "iOS",
+    });
+  };
+
+  const trackDownloadAndroid = () => {
+    mixpanel.track("Download Click", {
+      type: "android",
+    });
+  };
+
   return (
     <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden">
       <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px] items-center justify-center">
@@ -31,6 +50,7 @@ export function HeroSection() {
               <Button
                 className="w-full bg-blue-600 text-white hover:bg-blue-700"
                 size="lg"
+                onClick={trackDownloadiOS}
               >
                 <svg
                   viewBox="0 0 384 512"
@@ -43,6 +63,7 @@ export function HeroSection() {
               <Button
                 className="w-full bg-blue-600 text-white hover:bg-blue-700"
                 size="lg"
+                onClick={trackDownloadAndroid}
               >
                 <svg
                   viewBox="0 0 505.145 505.145"
