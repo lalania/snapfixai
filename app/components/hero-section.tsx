@@ -62,15 +62,15 @@ export function HeroSection() {
         </div>
         <div className="mx-auto flex items-center justify-center p-4 sm:p-8">
           <div className="relative w-[300px] h-[650px]">
-            <div className="absolute inset-0 bg-black rounded-[3rem] shadow-xl overflow-hidden">
+            <div className="absolute inset-0 bg-black rounded-[3rem] shadow-xl overflow-hidden  border-8 border-black">
               <div className="absolute top-0 inset-x-0 h-[32px] bg-black rounded-t-[3rem]"></div>
-              <div className="absolute top-[32px] inset-x-0 bottom-0 bg-white">
+              <div className="absolute top-[32px] inset-x-0 bottom-0 bg-white rounded-[2.5rem] overflow-hidden">
                 <Image
-                  src="/Flux 1.1 Pro Ultra Nov 28 2024.png"
+                  src="/hero.jpg"
                   alt="Before and after comparison of eye-fixing feature"
                   width={300}
                   height={650}
-                  className="rounded-b-[2.5rem] object-cover"
+                  className="rounded-b-[2.5rem] object-cover heigth-full"
                   priority
                 />
               </div>
