@@ -68,8 +68,7 @@ export function HeroSection() {
                 <Image
                   src="/hero.jpg"
                   alt="Before and after comparison of eye-fixing feature"
-                  width={300}
-                  height={650}
+                  fill={true}
                   className="rounded-b-[2.5rem] object-cover heigth-full"
                   priority
                 />
